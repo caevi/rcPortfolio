@@ -2,7 +2,7 @@ import { redirect } from "next/navigation";
 import { getAdminUser } from "@/lib/supabaseServer";
 import { AdminDashboard } from "@/components/admin/AdminDashboard";
 
-export const metadata = { title: "Dashboard · Admin", robots: { index: false, follow: false } };
+export const metadata = { title: "Admin Dashboard", robots: { index: false, follow: false } };
 export const dynamic = "force-dynamic";
 
 export default async function DashboardPage() {
