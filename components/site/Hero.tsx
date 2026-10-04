@@ -2,7 +2,6 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import type { Profile } from "@/lib/database.types";
-import { RcLogo3D } from "./RcLogo3D";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -41,20 +40,8 @@ export function Hero({ profile }: { profile: Profile | null }) {
         variants={container}
         initial="hidden"
         animate="show"
-        className="mx-auto grid w-full max-w-6xl items-center gap-6 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-10 lg:py-20"
+        className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6"
       >
-        {/* 3D RC logo: above the name on mobile, beside it on desktop */}
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, scale: reduce ? 1 : 0.85, filter: reduce ? "none" : "blur(10px)" },
-            show: { opacity: 1, scale: 1, filter: "blur(0px)", transition: { duration: 1.1, ease } },
-          }}
-          className="order-first -mx-4 flex justify-center lg:order-last lg:mx-0"
-        >
-          <RcLogo3D className="h-[230px] w-[260px] sm:h-[300px] sm:w-[340px] lg:h-[440px] lg:w-[480px]" />
-        </motion.div>
-
-        <div className="min-w-0">
         <motion.div variants={item} className="mb-8 flex items-center gap-4">
           {profile?.avatar_url && (
             // eslint-disable-next-line @next/next/no-img-element
@@ -75,7 +62,7 @@ export function Hero({ profile }: { profile: Profile | null }) {
 
         <motion.h1
           variants={item}
-          className="text-[clamp(3rem,10vw,8rem)] font-semibold lg:text-[6.5rem] leading-[0.9] tracking-[-0.04em] text-neutral-50"
+          className="text-[clamp(3rem,10vw,8rem)] font-semibold leading-[0.9] tracking-[-0.04em] text-neutral-50"
         >
           {first}
           {rest.length > 0 && (
@@ -134,7 +121,6 @@ export function Hero({ profile }: { profile: Profile | null }) {
             </CTA>
           )}
         </motion.div>
-        </div>
       </motion.div>
 
       <motion.a

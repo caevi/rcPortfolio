@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { SpinningLogo } from "./SpinningLogo";
+import { RcLogo3D } from "./RcLogo3D";
 
 const LINKS = [
   { href: "#skills", label: "Skills" },
@@ -33,7 +33,7 @@ export function Navbar({ name }: { name: string }) {
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" className="rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500" aria-label={name ? `${name} — back to top` : "Back to top"}>
-          <SpinningLogo size={40} />
+          <RcLogo3D size={44} />
         </a>
 
         <ul className="hidden items-center gap-1 sm:flex">

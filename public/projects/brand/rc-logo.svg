@@ -1,7 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="14 8 200 190">
-  <g fill="none" stroke="#fff" stroke-width="22" stroke-linejoin="miter" stroke-miterlimit="2.2" stroke-linecap="butt">
-    <path d="M143,47 L100,22 L33,61 L33,139 L100,178 L143,153"/>
-    <path d="M70,148 L70,66 L124,96 L70,126 M90,117 L178,137"/>
-  </g>
-  <circle cx="190" cy="140" r="18" fill="#dc2626"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-7.4 7 186 186">
+  <g fill="none" stroke="#fff" stroke-width="19" stroke-linejoin="miter" stroke-miterlimit="2.2" stroke-linecap="butt"><path d="M143,47 L100,22 L33,61 L33,139 L100,178 L143,153"/><path d="M70,148 L70,66 L112,66 L124,78 L124,98 L112,110 L70,110 M98,110 L118,142"/></g>
 </svg>
